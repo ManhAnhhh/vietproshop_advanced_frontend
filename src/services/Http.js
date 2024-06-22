@@ -7,6 +7,8 @@ const Http = axios.create({
     baseURL: BASE_API,
 });
 
+
+// interceptors react
 Http.interceptors.request.use(
     function (config) {
         const Auth = store.getState().Auth;
